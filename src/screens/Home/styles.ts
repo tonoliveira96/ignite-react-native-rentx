@@ -33,7 +33,7 @@ export const CarList = styled(FlatList).attrs({
   contentContainerStyle:{
     padding: 24
   },
-  showVerticalScrollindicator: false
+  showsVerticalScrollindicator: false
 })`
 
 `
