@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   useFonts,
   Inter_400Regular,
@@ -11,7 +11,7 @@ import {
 } from "@expo-google-fonts/archivo";
 import { ThemeProvider } from "styled-components";
 
-import { Scheduling } from "./src/screens/Scheduling";
+import { SchedulingDetails } from "./src/screens/SchedulingDetails";
 import AppLoading from "expo-app-loading";
 import theme from "./src/styles/theme";
 
@@ -29,7 +29,7 @@ export default function App() {
   }
   return (
     <ThemeProvider theme={theme}>
-      <Scheduling />
+      <SchedulingDetails />
     </ThemeProvider>
   );
 }
