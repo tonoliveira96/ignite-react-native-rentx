@@ -9,7 +9,7 @@ import {
   Archivo_500Medium,
   Archivo_600SemiBold,
 } from "@expo-google-fonts/archivo";
-import {ThemeProvider} from 'styled-components'
+import { ThemeProvider } from "styled-components";
 
 import { Home } from "./src/screens/Home";
 import AppLoading from "expo-app-loading";
