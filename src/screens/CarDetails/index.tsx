@@ -23,13 +23,17 @@ import {
   Period,
   Price,
   About,
-  Acessories
+  Acessories,
+  Footer,
 } from "./styles";
+import { Button } from "../../components/Button";
 
 export function CarDetails() {
   return (
     <Container>
-      <Header>{/* <BackButton onPress={() => {}} /> */}</Header>
+      <Header>
+        <BackButton onPress={() => {}} />
+        </Header>
       <CardImage>
         <ImageSlider
           imagesUrl={[
@@ -52,12 +56,12 @@ export function CarDetails() {
         </Details>
 
         <Acessories>
-          <Acessory name="350Km/h" icon={speedSvg}/>
-          <Acessory name="3.2s" icon={accelerationSvg}/>
+          <Acessory name="350Km/h" icon={speedSvg} />
+          <Acessory name="3.2s" icon={accelerationSvg} />
           <Acessory name="800hp" icon={forceSvg} />
           <Acessory name="Gasolina" icon={gasolineSvg} />
           <Acessory name="Auto" icon={exchangeSvg} />
-          <Acessory name="2 pessoas" icon={peopleSvg}/>
+          <Acessory name="2 pessoas" icon={peopleSvg} />
         </Acessories>
 
         <About>
@@ -65,6 +69,10 @@ export function CarDetails() {
           alavancagem dos conhecimentos estratégicos para atingir a excelência.
         </About>
       </Content>
+
+      <Footer>
+        <Button title="Confirmar" />
+      </Footer>
     </Container>
   );
 }
